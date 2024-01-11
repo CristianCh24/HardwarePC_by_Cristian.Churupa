@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+
+
+:root {
+	--white:#141212;
+	--black:#010100;
+	--grey:#575757;
+	--green:#76b801;
+}
+
+::-webkit-scrollbar {
+	background-color: var(--black);
+	width: 9px;
+	box-shadow: 0 0 5px var(--black);
+}
+  
+::-webkit-scrollbar-track {
+	border-radius: 99px;
+}
+  
+::-webkit-scrollbar-thumb {
+	background-color: var(--green);
+	border-radius: 6px;
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+/*                                 HEADER                                     */
+/*----------------------------------------------------------------------------*/
+.container-header {
+	background-color: var(--white);
+}
+/*---------------------------------------------------*/
+/* Logo */
+.navbar-brand {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--green);
+	margin: 6px;
+}
+
+.navbar-brand:hover {
+    color: var(--grey);
+}
+
+.imgLogo {
+    width: 33px;
+    margin-right: 6px;
+}
+/*---------------------------------------------------*/
+/* Caja de busqueda */
+.search-box{
+	background-color: var(--white);
+	border-radius: 9px;
+	height: 33px;
+	overflow: hidden;
+	border: 3px solid var(--black);
+}
+
+.search-box input {
+	background: var(--white);
+	color: var(--green);
+	border: none;
+}
+
+.form-control {
+	background-color: #76b801;
+	border-color: #ec7500;
+	color: aqua;
+}
+
+.form-control::placeholder {
+	color:var(--green);
+	background-color: var(--white);
+}
+
+.search-box button img{
+	width: 33px;
+}
+
+.search-box button {	
+	border: 0;
+	background-color:var(--black);
+}
+/*---------------------------------------------------*/
+/* Usuario */
+.user {
+	border: 3px solid var(--black);
+	background-color: var(--white);
+	color: var(--green);
+	border-radius: 9px;
+}
+
+.btn .user {
+	background-color: var(--white);
+	color: var(--green);
+	width: 15;
+}
+
+.btn .user:hover {
+	box-shadow: #76b801;
+	transition: 0.3s;
+	
+}
+
+.btn:hover {
+	background-color: transparent;
+	border: 3px solid var(--green);
+	color: var(--green);
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*                                  Main                                      */
+/*----------------------------------------------------------------------------*/
+main {
+	background-color: var(--black);
+}
+.container-text {
+	background-color: var(--grey);
+	color: #010100;
+	font-weight: bolder;
+}
+/*---------------------------------------------------*/
+/* Barra de navegacion */
+.container-navbar {
+	background-color: var(--black);
+}
+
+.nav-item a {
+	font-size: 12px;
+	color: var(--grey);
+	font-weight: 666;
+	text-transform: capitalize;
+}
+
+.nav-item a:hover {
+	color: var(--green);
+}
+
+
+
+.nav-tabs {
+	border-color: var(--green);
+}
+
+.nav-tabs .nav-link:hover {
+	border-color:var(--green);
+}
+
+
+
+
+/* Baner (separador) */
+
+.banner-separator {
+	background-color: #010100;
+	color: var(--green);
+	text-transform: capitalize;
+}
+
+
+
+/*---------------------------------------------------*/
+/* Productos */
+
+.container-products {
+    background-color: var(--white);
+    padding: 33px;
+	width: 96%;
+		
+}
+
+.card {
+	background-color: var(--black);
+	padding: 15px;
+	border-radius: 6px;
+	filter: grayscale(75%);
+}
+
+.card:hover {
+	box-shadow: 0 0 9px var(--green);
+	transition-duration: 0.3s;
+	filter: grayscale(0);
+}
+
+.card img {
+    height: 133px;
+}
+
+.card-text {
+    color: var(--green);
+}
+
+.price {
+	font-size: 18px;
+	font-weight: 666;
+    color: #fefeff;
+}
+
+/*----------------------------------------------------------------------------*/
+/*                                 Footer                                     */
+/*----------------------------------------------------------------------------*/
+.container-footer {
+	background: var(--black);
+	border-top: 3px solid var(--green);
+}
+
+.title-footer {
+	color: var(--green);
+}
+
+.text-footer:hover {
+	color: var(--green);
+}
+
+.icons i {
+	font-size: 19px;
+	padding: 0 8px;
+	color: white;
+}
+
+.border-bottom {
+	color: #76b801;
+}
