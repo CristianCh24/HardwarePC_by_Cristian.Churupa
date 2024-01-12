@@ -8,8 +8,6 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
-
-
 :root {
 	--white:#141212;
 	--black:#010100;
@@ -31,22 +29,18 @@ body {
 	background-color: var(--green);
 	border-radius: 6px;
 }
-
-
-
 /*----------------------------------------------------------------------------*/
 /*                                 HEADER                                     */
 /*----------------------------------------------------------------------------*/
 .container-header {
 	background-color: var(--white);
 }
-/*---------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 /* Logo */
 .navbar-brand {
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: var(--green);
-	margin: 6px;
 }
 
 .navbar-brand:hover {
@@ -55,9 +49,9 @@ body {
 
 .imgLogo {
     width: 33px;
-    margin-right: 6px;
+	margin-right: 1rem;    
 }
-/*---------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 /* Caja de busqueda */
 .search-box{
 	background-color: var(--white);
@@ -73,44 +67,39 @@ body {
 	border: none;
 }
 
-.form-control {
-	background-color: #76b801;
-	border-color: #ec7500;
-	color: aqua;
+.search:hover{
+	color: var(--green);
+	background-color: var(--white);
+	
 }
 
-.form-control::placeholder {
+.search::placeholder {
 	color:var(--green);
 	background-color: var(--white);
+	
 }
 
 .search-box button img{
-	width: 33px;
+	width: 3rem;
 }
 
 .search-box button {	
 	border: 0;
 	background-color:var(--black);
 }
-/*---------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
 /* Usuario */
 .user {
 	border: 3px solid var(--black);
 	background-color: var(--white);
 	color: var(--green);
 	border-radius: 9px;
+	font-size: 1.15rem;
 }
 
 .btn .user {
 	background-color: var(--white);
 	color: var(--green);
-	width: 15;
-}
-
-.btn .user:hover {
-	box-shadow: #76b801;
-	transition: 0.3s;
-	
 }
 
 .btn:hover {
@@ -118,37 +107,21 @@ body {
 	border: 3px solid var(--green);
 	color: var(--green);
 }
-
-
 /*----------------------------------------------------------------------------*/
-/*                                  Main                                      */
-/*----------------------------------------------------------------------------*/
-main {
-	background-color: var(--black);
-}
-.container-text {
-	background-color: var(--grey);
-	color: #010100;
-	font-weight: bolder;
-}
-/*---------------------------------------------------*/
 /* Barra de navegacion */
 .container-navbar {
 	background-color: var(--black);
 }
 
 .nav-item a {
-	font-size: 12px;
+	font-size: 1.50rem;
 	color: var(--grey);
-	font-weight: 666;
 	text-transform: capitalize;
 }
 
 .nav-item a:hover {
 	color: var(--green);
 }
-
-
 
 .nav-tabs {
 	border-color: var(--green);
@@ -157,33 +130,33 @@ main {
 .nav-tabs .nav-link:hover {
 	border-color:var(--green);
 }
-
-
-
-
+/*----------------------------------------------------------------------------*/
+/*                                  Main                                      */
+/*----------------------------------------------------------------------------*/
+main {
+	background-color: var(--black);
+}
+.container-products {
+    background-color: var(--white);
+    padding: 33px;
+	width: 96%;	
+}
+/*----------------------------------------------------------------------------*/
 /* Baner (separador) */
-
 .banner-separator {
 	background-color: #010100;
 	color: var(--green);
 	text-transform: capitalize;
 }
 
-
-
-/*---------------------------------------------------*/
-/* Productos */
-
-.container-products {
-    background-color: var(--white);
-    padding: 33px;
-	width: 96%;
-		
+.banner-separator h2 {
+	font-size: 2rem;
 }
-
+/*----------------------------------------------------------------------------*/
+/* Productos */
 .card {
 	background-color: var(--black);
-	padding: 15px;
+	padding: 1.5rem;
 	border-radius: 6px;
 	filter: grayscale(75%);
 }
@@ -195,19 +168,18 @@ main {
 }
 
 .card img {
-    height: 133px;
+    height: 16rem;
 }
 
 .card-text {
     color: var(--green);
+	font-size: 1.5rem;
 }
 
 .price {
-	font-size: 18px;
-	font-weight: 666;
+	font-size: 1.25rem;
     color: #fefeff;
 }
-
 /*----------------------------------------------------------------------------*/
 /*                                 Footer                                     */
 /*----------------------------------------------------------------------------*/
@@ -215,21 +187,37 @@ main {
 	background: var(--black);
 	border-top: 3px solid var(--green);
 }
-
+/*----------------------------------------------------------------------------*/
+/* Informacion */
 .title-footer {
 	color: var(--green);
+	font-size: 1.75rem;
+}
+
+.text-footer {
+	color: #575757;	
 }
 
 .text-footer:hover {
 	color: var(--green);
 }
 
+.gmail {
+	font-size: small;
+	color: #fafafa;
+}
+
 .icons i {
-	font-size: 19px;
-	padding: 0 8px;
-	color: white;
+	font-size: 1.50rem;
+	color: var(--green);
 }
 
 .border-bottom {
 	color: #76b801;
+}
+/*----------------------------------------------------------------------------*/
+/* Copyright */
+.copyright h6{
+	font-size: 1.25rem;
+	color: #575757;
 }
