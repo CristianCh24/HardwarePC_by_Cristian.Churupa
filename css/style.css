@@ -141,6 +141,11 @@ main {
     padding: 33px;
 	width: 96%;	
 }
+
+.information-text {
+	font-size: 2rem;
+	color: var(--grey);
+}
 /*----------------------------------------------------------------------------*/
 /* Baner (separador) */
 .banner-separator {
