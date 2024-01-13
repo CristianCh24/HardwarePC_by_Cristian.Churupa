@@ -142,20 +142,11 @@ main {
 	width: 96%;	
 }
 
-.information-text {
-	font-size: 2rem;
-	color: var(--grey);
-}
 /*----------------------------------------------------------------------------*/
 /* Baner (separador) */
 .banner-separator {
 	background-color: #010100;
 	color: var(--green);
-	text-transform: capitalize;
-}
-
-.banner-separator h2 {
-	font-size: 2rem;
 }
 /*----------------------------------------------------------------------------*/
 /* Productos */
