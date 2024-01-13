@@ -138,7 +138,6 @@ main {
 }
 .container-products {
     background-color: var(--white);
-    padding: 33px;
 	width: 96%;	
 }
 
