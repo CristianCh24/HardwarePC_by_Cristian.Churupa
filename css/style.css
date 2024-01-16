@@ -89,17 +89,12 @@ body {
 }
 /*----------------------------------------------------------------------------*/
 /* Usuario */
-.user {
+.btn {
 	border: 3px solid var(--black);
 	background-color: var(--white);
 	color: var(--green);
 	border-radius: 9px;
 	font-size: 1.15rem;
-}
-
-.btn .user {
-	background-color: var(--white);
-	color: var(--green);
 }
 
 .btn:hover {
@@ -140,8 +135,6 @@ main {
     background-color: var(--white);
 	width: 96%;	
 }
-
-
 /*----------------------------------------------------------------------------*/
 /* Baner (separador) */
 .banner-separator {
@@ -178,7 +171,6 @@ main {
 }
 /*----------------------------------------------------------------------------*/
 /* Carousel de imagenes */
-
 .carousel-inner {
 	height: 40rem;
 	width: 100%;
@@ -209,6 +201,12 @@ main {
 
 .carousel-control-next:hover {
 	background-color: transparent;
+}
+
+.list-group-item {
+	background-color: transparent;
+	color: var(--grey);
+	border: var(--green) solid;
 }
 /*----------------------------------------------------------------------------*/
 /*                                 Footer                                     */
