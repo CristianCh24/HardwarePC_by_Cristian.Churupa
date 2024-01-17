@@ -90,7 +90,6 @@ body {
 .search::placeholder {
 	color:var(--green);
 	background-color: var(--white);
-	
 }
 
 .search-box button img{
@@ -242,6 +241,42 @@ main {
 	color: var(--green);
 	background-color: var(--black);
 	box-shadow: none;
+}
+
+.teres {
+	width: 80%;
+	color: var(--grey);
+}
+/*----------------------------------------------------------------------------*/
+/* Formulario */
+.campo {
+	background-color: var(--black);
+	border-radius: 6px;
+}
+.form-control {
+	background-color: #141212;
+	color: var(--green);
+	border: var(--green) 2px solid;
+}
+
+.form-label, .form-check {
+	color: var(--green)
+}
+
+input:focus {
+	background-color: #000000;
+	color: var(--green);
+	transition: background-color 1s ease;
+}
+
+.form-check-input:checked {
+	background-color: var(--green);
+	border-color: var(--black);
+}
+/*----------------------------------------------------------------------------*/
+/* Info-detalles */
+.details {
+	color: var(--grey);
 }
 /*----------------------------------------------------------------------------*/
 /*                                 Footer                                     */

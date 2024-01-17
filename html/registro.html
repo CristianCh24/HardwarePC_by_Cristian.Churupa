@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
         <link rel="shortcut icon" href="../img/icon/others/logo.webp">
     </head>
@@ -73,16 +73,21 @@
         <main>
 
             <div class="container-fluid container-products p-5">
-                <div class="col-12 fw-bold fs-1 py-1 banner-separator rounded-3">
-                    <p class="m-0 text-center">¡¡¡Bienvenido!!!</p>
+                <!---------------------------------------------------------->
+                <!-- Baner (separador) -->
+                <div class="banner-separator d-flex mb-4 rounded-3">
+                    <h1 class="m-auto text-center p-3 fw-bold fs-1">...Bienvenido...</h1>
                 </div>
-
+                <!---------------------------------------------------------->
+                <!-- Formulario -->
                 <div class="container-fluid p-0 m-0">
-                    <div class="row align-items-center justify-content-center">
-
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5">
-
-                            <form class="row g-3 m-0 p-3">
+                    <div class="container-fluid row m-0 p-0">
+                        
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                            <div class="col-12">
+                                <h2 class="text-center campo mb-4 fs-3">Datos personales</h2>
+                            </div>    
+                            <form class="row m-0 mb-5 p-5 fs-5 campo">
                                 <div class="col-md-6">
                                     <label for="inputEmail4" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="inputEmail4">
@@ -100,43 +105,30 @@
                                     <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputCity" class="form-label">City</label>
+                                    <label for="inputCity" class="form-label">Ciudad</label>
                                     <input type="text" class="form-control" id="inputCity">
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="inputState" class="form-label">State</label>
-                                    <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="inputZip" class="form-label">Zip</label>
+                                
+                                <div class="col-md-6">
+                                    <label for="inputZip" class="form-label">Codigo Postal</label>
                                     <input type="text" class="form-control" id="inputZip">
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                </div>
+                                
+                                
                             </form>
                             
                         </div>
-                            
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-5 col-xl-5">
-
-                            <form class="row g-3 m-0 p-3">
-                                <div class="col-md-6">
+                        
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 container-fluid">
+                            <div class="col-12 ">
+                                <h2 class="text-center campo mb-4 fs-3">Datos personales de la tarjeta</h2>
+                            </div> 
+                            <form class="mb-5 m-0 p-5 fs-5 campo">
+                                <div class="col-md-12">
                                     <label for="inputEmail4" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="inputEmail4">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="inputPassword4" class="form-label">Password</label>
                                     <input type="password" class="form-control" id="inputPassword4">
                                 </div>
@@ -148,36 +140,26 @@
                                     <label for="inputAddress2" class="form-label">Address 2</label>
                                     <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label for="inputCity" class="form-label">City</label>
                                     <input type="text" class="form-control" id="inputCity">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="inputState" class="form-label">State</label>
-                                    <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-2">
-                                    <label for="inputZip" class="form-label">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip">
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                </div>
+                                </div>                               
                             </form>
 
                         </div>
-                    </div>       
+                        
+                    </div> 
+                    <div class="col-12 container-fluid">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label fs-5 no-underline" for="flexCheckDefault">
+                              Acepto que la informacion es veridica y de que leí los <a href="question.html"><strong>Terminos y condiciones</strong></a>. 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mt-5 p-0 col-12">
+                        <button type="submit" class="btn btn-primary ">Registrarse</button>
+                    </div>      
                 </div>
                 
             </div>
@@ -192,9 +174,9 @@
                     <h4 class="text-center pb-3 title-footer">Acerca de nosotros</h4>
                 </div>
                 <a href="information.html" class="nav-link text-center text-footer">
-                    <h3>Informacion</h3>
+                    <h3>Terminos y condiciones</h3>
                 </a>
-                <a href="#" class="nav-link text-center text-footer">
+                <a href="question.html" class="nav-link text-center text-footer">
                     <h3>Preguntas frecuentes</h3>
                 </a>
                 <p class="text-center gmail">hardwarepc@gmail.com</p>
@@ -228,6 +210,6 @@
             </div>
             </div>
         </footer>
-        <scriptsrc= src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></scriptsrc=>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
