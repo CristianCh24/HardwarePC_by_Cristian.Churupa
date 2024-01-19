@@ -66,6 +66,11 @@ body {
   border: none;
 }
 
+.search::-moz-placeholder {
+  color: #76b801;
+  background-color: #141212;
+}
+
 .search:hover, .search::placeholder {
   color: #76b801;
   background-color: #141212;
@@ -201,7 +206,8 @@ input:focus {
 .slide img {
   height: 40rem;
   width: 100%;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .carousel-control-prev,
@@ -234,7 +240,8 @@ input:focus {
 .card img {
   height: 16rem;
   width: 100%;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .card-text {
@@ -285,6 +292,4 @@ input:focus {
 .copyright h6 {
   font-size: 1.25rem;
   color: #575757;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

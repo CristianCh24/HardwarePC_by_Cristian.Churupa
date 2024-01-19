@@ -1,0 +1,17 @@
+/*----------------------------------------------------------------------------*/
+/* Logo */
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-green;
+
+    &:hover {
+        color: $color-grey;
+    }
+}
+
+.imgLogo {
+    width: 33px;
+    margin-right: 1rem;
+}

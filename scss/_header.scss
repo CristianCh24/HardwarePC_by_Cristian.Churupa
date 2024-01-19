@@ -1,0 +1,29 @@
+
+/*----------------------------------------------------------------------------*/
+/* Usuario */
+
+/*----------------------------------------------------------------------------*/
+/* Barra de navegacion */
+
+.container-navbar {
+    background-color: $color-black;
+    margin: 1rem;
+}
+
+.nav-item a {
+    font-size: 1.50rem;
+    color: $color-grey;
+    text-transform: capitalize;
+
+    &:hover {
+        color: $color-green;
+    }
+}
+
+.nav-tabs {
+    border-color: $color-green;
+
+    .nav-link:hover {
+        border-color: $color-green;
+    }
+}

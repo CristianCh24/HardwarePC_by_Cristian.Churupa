@@ -1,0 +1,42 @@
+.container-footer {
+    background: var(--black);
+    border-top: 3px solid var(--green);
+}
+
+/*----------------------------------------------------------------------------*/
+/* Informacion */
+
+.title-footer {
+    color: var(--green);
+    font-size: 1.75rem;
+}
+
+.text-footer {
+    color: #575757;
+
+    &:hover {
+        color: var(--green);
+    }
+}
+
+.gmail {
+    font-size: small;
+    color: #fafafa;
+}
+
+.icons i {
+    font-size: 1.50rem;
+    color: var(--green);
+}
+
+.border-bottom {
+    color: #76b801;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Copyright */
+
+.copyright h6 {
+    font-size: 1.25rem;
+    color: #575757;
+}

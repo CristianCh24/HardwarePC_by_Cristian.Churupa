@@ -1,0 +1,36 @@
+/*----------------------------------------------------------------------------*/
+/* Caja de busqueda */
+
+.search-box {
+    background-color: $color-white;
+    border-radius: 9px;
+    height: 33px;
+    margin: 0.25rem 0rem 0.25rem 0rem ;
+    overflow: hidden;
+    border: 3px solid $color-black;
+    box-shadow: 0 0 9px  $color-green;
+
+    input {
+        background: $color-white;
+        color: $color-green;
+        border: none;
+    }
+}
+
+.search {
+
+    &:hover,
+    &::placeholder {
+        color: $color-green;
+        background-color: $color-white;
+    }
+}
+
+.search-box button {
+    img {
+        width: 3rem;
+    }
+
+    border: 0;
+    background-color: $color-black;
+}

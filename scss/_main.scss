@@ -1,0 +1,117 @@
+main {
+    background-color: $color-black;
+}
+
+.container-products {
+    background-color: $color-white;
+    width: 96%;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Baner (separador) */
+
+.banner-separator {
+    background-color: #010100;
+    color: $color-green;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------*/
+/* Info-Compra */
+
+.list-group-item {
+    background-color: transparent;
+    color: $color-grey;
+    border: $color-green solid;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Preguntas */
+
+.question {
+    width: 80%;
+}
+
+.accordion-header,
+.accordion-body {
+    border: var(--green) 3px solid;
+    border-radius: 3px;
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+    background-color: var(--black);
+    color: var(--grey);
+}
+
+.accordion-item {
+    margin-bottom: 3rem;
+    border: none;
+    background-color: transparent;
+}
+
+.accordion-button {
+    color: var(--green);
+    font-size: 1.5rem;
+    background-color: var(--black);
+
+    &:not(.collapsed) {
+        color: var(--green);
+        background-color: var(--black);
+        box-shadow: none;
+    }
+}
+
+.teres {
+    width: 80%;
+    color: var(--grey);
+}
+
+/*----------------------------------------------------------------------------*/
+/* Formulario */
+
+.campo {
+    background-color: var(--black);
+    border-radius: 6px;
+}
+
+.form-control {
+    background-color: #141212;
+    color: var(--green);
+    border: var(--green) 2px solid;
+}
+
+.form-label,
+.form-check {
+    color: var(--green);
+}
+
+input:focus {
+    background-color: #000000;
+    color: var(--green);
+    transition: background-color 1s ease;
+}
+
+.form-check-input:checked {
+    background-color: var(--green);
+    border-color: var(--black);
+}
+
+/*----------------------------------------------------------------------------*/
+/* Info-detalles */
+
+.details {
+    color: $color-grey;
+}
+
+.table {
+    color: green;
+    background-color: #141212;
+    border-color: $color-green;
+}
+
+.table>:not(caption)>*>* {
+    background-color: var(--grey);
+    color: var(--green);
+}
