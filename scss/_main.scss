@@ -7,13 +7,7 @@ main {
     width: 96%;
 }
 
-/*----------------------------------------------------------------------------*/
-/* Baner (separador) */
 
-.banner-separator {
-    background-color: #010100;
-    color: $color-green;
-}
 
 
 
@@ -37,12 +31,12 @@ main {
 
 .accordion-header,
 .accordion-body {
-    border: var(--green) 3px solid;
+    border: $color-green 3px solid;
     border-radius: 3px;
     margin-bottom: 0.6rem;
     font-size: 1.5rem;
-    background-color: var(--black);
-    color: var(--grey);
+    background-color: $color-black;
+    color: $color-grey;
 }
 
 .accordion-item {
@@ -52,20 +46,20 @@ main {
 }
 
 .accordion-button {
-    color: var(--green);
+    color: $color-green;
     font-size: 1.5rem;
-    background-color: var(--black);
+    background-color: $color-black;
 
     &:not(.collapsed) {
-        color: var(--green);
-        background-color: var(--black);
+        color: $color-green;
+        background-color: $color-black;
         box-shadow: none;
     }
 }
 
 .teres {
     width: 80%;
-    color: var(--grey);
+    color: $color-grey;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -103,15 +97,20 @@ input:focus {
 
 .details {
     color: $color-grey;
+    
+    
 }
 
 .table {
     color: green;
-    background-color: #141212;
+    margin: 0;
     border-color: $color-green;
+    
 }
 
+
+
 .table>:not(caption)>*>* {
-    background-color: var(--grey);
-    color: var(--green);
+    background-color: transparent;
+    color: $color-green;
 }

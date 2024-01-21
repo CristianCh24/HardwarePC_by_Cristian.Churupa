@@ -89,13 +89,6 @@ main {
 }
 
 /*----------------------------------------------------------------------------*/
-/* Baner (separador) */
-.banner-separator {
-  background-color: #010100;
-  color: #76b801;
-}
-
-/*----------------------------------------------------------------------------*/
 /* Info-Compra */
 .list-group-item {
   background-color: transparent;
@@ -111,12 +104,12 @@ main {
 
 .accordion-header,
 .accordion-body {
-  border: var(--green) 3px solid;
+  border: #76b801 3px solid;
   border-radius: 3px;
   margin-bottom: 0.6rem;
   font-size: 1.5rem;
-  background-color: var(--black);
-  color: var(--grey);
+  background-color: #010100;
+  color: #575757;
 }
 
 .accordion-item {
@@ -126,19 +119,19 @@ main {
 }
 
 .accordion-button {
-  color: var(--green);
+  color: #76b801;
   font-size: 1.5rem;
-  background-color: var(--black);
+  background-color: #010100;
 }
 .accordion-button:not(.collapsed) {
-  color: var(--green);
-  background-color: var(--black);
+  color: #76b801;
+  background-color: #010100;
   box-shadow: none;
 }
 
 .teres {
   width: 80%;
-  color: var(--grey);
+  color: #575757;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -178,13 +171,49 @@ input:focus {
 
 .table {
   color: green;
-  background-color: #141212;
+  margin: 0;
   border-color: #76b801;
 }
 
 .table > :not(caption) > * > * {
-  background-color: var(--grey);
-  color: var(--green);
+  background-color: transparent;
+  color: #76b801;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Baner (separador) */
+.banner-separator {
+  background-color: #010100;
+  color: #76b801;
+  margin-bottom: 0.66rem;
+  border-radius: 0.66rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Baner (separador) */
+.breadcrumb {
+  background-color: #010100;
+  text-decoration: none;
+  font-size: 1.25rem;
+  border-radius: 0.66rem;
+  --bs-breadcrumb-divider-color: grey;
+  --bs-breadcrumb-divider: ">";
+  margin-bottom: 0.66rem;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: #76b801;
+}
+.breadcrumb .active {
+  color: #575757;
+}
+.breadcrumb .item1 + .item2::before {
+  color: grey;
+  margin: 0px 5px 0 5px;
+  --bs-breadcrumb-divider: "|";
+}
+.breadcrumb .breadshare {
+  justify-content: end;
 }
 
 /*----------------------------------------------------------------------------*/
