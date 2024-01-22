@@ -11,122 +11,217 @@
   </head>
   <body>
     <header>
-        <nav class="container-header container-fluid">
-          <div class="row align-items-center justify-content-center">
-            <!---------------------------------------------------------->
-            <!-- Logo -->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" >
-              <div class="container-fluid navbar">
-                <a class="navbar-brand text-decoration-none m-2" href="../index.html">
-                  <img src="../img/logo/logo.webp" alt="logo de HardwarePC" class="imgLogo img-fluid"/>HardwarePC
-                </a>
-              </div>
-            </div>
-            <!---------------------------------------------------------->
-            <!-- Caja de busqueda -->
-            <div class="col-12 order-last col-sm-12 order-sm-last col-md-4 col-lg-4 col-xl-4 m-0 p-0">
-              <form class="d-flex search-box" role="search" action="/search" method="get">
-                <input class="form-control text-center search" type="text" placeholder="¡¡¡Encuentra lo que deseas!!!" name="text"/>
-                <div class="input-group-btn">
-                  <button type="submit">
-                    <img class="img-fluid" src="../img/icon/others/search.webp" alt="Botón de búsqueda">
-                  </button>
-                </div>
-              </form>
-            </div>
-            <!---------------------------------------------------------->
-            <!-- Usuario -->
-            <div class="col-6 col-sm-6 col-md-4 order-md-last col-lg-4 col-xl-4" >  
-              <div class="navbar justify-content-end">
-                  <button class="btn user m-2" type="button">
-                    <a href="../html/registro.html" class="nav-link p-1 px-5">Iniciar Sesion</a>
-                  </button>
-              </div>
-            </div>
+      <nav class="container-header container-fluid">
+        <div class="row align-items-center justify-content-center">
+          <!---------------------------------------------------------->
+          <!-- Logo -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4" >
+          <div class="container-fluid navbar">
+              <a class="navbar-brand text-decoration-none" href="../index.html">
+              <img src="../img/logo/logo.webp" alt="logo de HardwarePC" class="imgLogo img-fluid"/>HardwarePC
+              </a>
+          </div>
           </div>
           <!---------------------------------------------------------->
-          <!-- Barra de navegacion -->
-          <div class="row align-items-center justify-content-center">        
-            <ul class="nav nav-tabs justify-content-center container-navbar">
-              <li class="nav-item">
-                <a class="nav-link" href="../html/product.html">procesadores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/product.html">placas madre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/product.html">cables</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/product.html">fuentes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/product.html">gabinetes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/product.html">monitores</a>
-              </li>
-            </ul>
+          <!-- Caja de busqueda -->
+          <div class="col-12 order-last col-sm-12 order-sm-last col-md-4 col-lg-4 col-xl-4">
+          <form class="d-flex search-box" role="search" action="information.html" method="get">
+            <input class="form-control text-center search" type="text" placeholder="¡¡¡Encuentra lo que deseas!!!" name="text"/>
+            <div class="input-group-btn">
+              <button type="submit">
+                <img src="../img/icon/others/search.webp" alt="Botón de búsqueda">
+              </button>
+            </div>
+          </form>
           </div>
-        </nav>
+          <!---------------------------------------------------------->
+          <!-- Usuario -->
+          <div class="col-6 col-sm-6 col-md-4 order-md-last col-lg-4 col-xl-4" >  
+            <div class="navbar justify-content-end"> 
+              <a href="../html/registro.html" class="btn" role="button">Iniciar Sesion</a>
+            </div>
+          </div>
+        </div>
+        <!---------------------------------------------------------->
+        <!-- Barra de navegacion -->
+        <div class="row align-items-center justify-content-center">        
+          <ul class="nav nav-tabs justify-content-center container-navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">procesadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">placas madre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">cables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">fuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">gabinetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">monitores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">teclados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">mouse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/product.html">otros</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="container-fluid container-products p-5">
+      <div class="container-content p-5">
         <!---------------------------------------------------------->
         <!-- Baner (separador) -->
-        <div class="banner-separator d-flex mb-4 rounded-3">
-          <h1 class="m-auto text-center p-3 fw-bold fs-1">...Terminos y Condiciones...</h1>
+        <div class="banner-separator mb-5">
+          <h1 id="redireccion">Términos y Condiciones</h1>
         </div>
         <!---------------------------------------------------------->
         <!-- Terminos y condiciones -->
-        <div class="container-fluid p-0 teres fs-3">          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatem quod sit dolorem molestias explicabo blanditiis iusto cum commodi, quaerat quasi molestiae eveniet accusantium excepturi aperiam sint nemo maiores esse.
-          Labore molestias dolore sed beatae itaque eos perferendis, voluptas sapiente necessitatibus mollitia. Qui, voluptate temporibus doloremque quidem commodi libero impedit, et voluptatum molestias repellendus similique nulla, unde mollitia dignissimos eum.</p><br>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et aliquid voluptate nihil corrupti commodi non, ab, excepturi fugit ullam esse blanditiis dolores magnam deserunt provident recusandae! Tempore commodi ad perspiciatis.</p><br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis impedit nam dolor! Temporibus iure fuga nulla quae a corrupti accusamus quasi nam amet ipsam distinctio, ab itaque esse eveniet reprehenderit!
-          Sint velit molestiae eos eligendi? Ipsa quo iure expedita illo placeat molestias sequi perferendis in odit dolorum voluptas nobis vitae dolorem aliquam totam, nihil laudantium eum harum debitis corrupti. Nisi!
-          Fugiat tempore suscipit architecto nihil dignissimos molestiae nostrum iure? Provident, tenetur quas architecto voluptas, porro fugiat possimus quaerat rerum qui esse corrupti voluptates voluptatem, natus eius voluptatum assumenda cum facere.
-          Nisi enim ratione nesciunt deserunt quasi corporis ex earum, ipsam suscipit sit tempora voluptatibus optio assumenda quisquam? Natus odio nobis pariatur, dolorem fugiat molestias maiores veniam nulla ratione in assumenda.</p><br>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi et quibusdam, dolorem voluptas aliquid temporibus maiores praesentium placeat deserunt minus illo a ex hic neque, doloribus ipsa? Aperiam, libero itaque?
-          Esse, ipsum. Nisi aliquid quod vel veritatis doloribus quasi ducimus? Itaque accusantium tempore fugiat quo consectetur maxime excepturi et officia. Earum sapiente voluptatum eaque debitis vitae tempore repellendus molestiae dolore?
-          Voluptas, odio. Laboriosam dolores, exercitationem animi quisquam saepe ipsa deleniti deserunt quidem molestias sed, ut ducimus ullam tenetur ea, quas qui praesentium soluta id adipisci a! Atque nostrum dolorem eius?
-          Qui quis, ratione soluta quo minus rem ab, illo iure ducimus in, aperiam omnis quae dolor sunt excepturi tempore at animi repellat. Molestias modi aliquid dolor libero excepturi labore distinctio?
-          At deserunt reprehenderit saepe, sapiente sed amet explicabo ea reiciendis architecto aut itaque, dignissimos accusantium minima adipisci corrupti sint facere veritatis ratione error veniam maxime magni. Laborum temporibus minima tenetur?
-          Beatae repellendus earum voluptatibus natus expedita, cum sapiente quis iste quisquam similique non neque asperiores ut magni cumque doloremque ea reiciendis error labore voluptatem mollitia maiores provident dicta. Ut, aperiam.
-          At, ut inventore cumque quam suscipit illum nesciunt adipisci voluptatibus nihil commodi, vel impedit excepturi asperiores fugit sunt quae quisquam accusamus, itaque neque temporibus ducimus dignissimos eius! Recusandae, maiores dolorum?
-          Repudiandae voluptatum, hic enim nesciunt, fugit libero magni ex reiciendis atque cumque ut? Quas, itaque consequatur rerum sapiente, quaerat soluta corporis minus perspiciatis eos quibusdam dolores dignissimos cupiditate commodi doloribus!
-          Nobis dolorum nesciunt autem eaque sapiente eveniet consequatur cupiditate dolor perferendis repellat sed, expedita temporibus maxime in excepturi fugit sit assumenda voluptatem nulla explicabo quae aperiam dolorem! Distinctio, alias inventore.
-          Corrupti, itaque, tenetur velit laboriosam eos facere incidunt rerum deserunt asperiores ab explicabo commodi illo illum sint dolor ad iusto nulla adipisci cupiditate dolorem. Ducimus dolore cupiditate aliquid dignissimos natus?
-          Eveniet atque cumque consectetur beatae, necessitatibus ullam fuga, laboriosam perspiciatis sequi molestias aperiam deleniti. Alias velit nobis quod dicta, maxime sint commodi odio, doloribus repellendus nihil vel placeat reprehenderit eaque.
-          Sint nulla natus nostrum cum hic repellat, nemo non quisquam temporibus laborum? Dolores dignissimos ipsam pariatur vero nihil iusto deserunt doloribus culpa, voluptatibus nesciunt, mollitia tenetur quasi, voluptatem commodi impedit.
-          Officia repudiandae vel blanditiis reiciendis expedita similique id, culpa illo delectus laboriosam tempora rem deserunt minus excepturi, aliquam vero mollitia pariatur quia doloremque at nisi dicta consectetur iste cum. Laborum!
-          Temporibus laborum adipisci ullam quod officiis ab neque quaerat? Impedit rem, culpa architecto autem distinctio dolor fugit nisi quas ipsa pariatur debitis. Earum atque harum vel ullam, rerum in laboriosam?
-          Maiores cum deleniti nisi quia, explicabo nostrum expedita facere debitis accusantium illo quis illum facilis sed accusamus amet, in placeat architecto exercitationem nemo dolore temporibus. Placeat odio unde amet quidem.</p>   
+        <div class="container-fluid px-4 py-0 m-0 details"> 
+          <p>Versión vigente: 36 de Enero, 2124.&nbsp;</p><br>
+          <p><strong>Resumen de términos y condiciones</strong></p><br>
+          <p>HardwarePC es una compañía de tecnología que ofrece servicios vinculados principalmente al comercio electrónico y a los pagos digitales.</p>
+          <ul>
+            <li>El Marketplace es una plataforma de comercio electrónico donde las Personas Usuarias pueden vender y comprar productos usando distintas soluciones de pago y envío.</li>
+            <li>En Marketplace VIS, conectamos a las personas interesadas en realizar transacciones con vehículos, inmuebles y servicios con posibles vendedores.</li>
+            <li>Mercado Pago es una plataforma de pagos y cobros que puede ser usada tanto para operaciones realizadas dentro del Marketplace como fuera de él.</li>
+            <li>Mercado Envíos es la herramienta tecnológica que ofrecemos para que las Personas Usuarias puedan enviar y recibir sus compras hechas en sitios o aplicaciones que utilicen la tecnología de HardwarePC.</li>
+            <li>También ofrecemos otros servicios como Mercado Shops, Mercado Ads, Mercado Créditos, entre muchos otros, todos con el mismo fin: <strong>democratizar el comercio y los servicios financieros en la región.</strong></li>
+          </ul>
+          <p>Para poder operar en la plataforma todas las Personas Usuarias deberán aceptar los Términos y Condiciones, los anexos y la Declaración de Privacidad.</p>
+          <p>Podrán operar dentro de HardwarePC quienes tengan capacidad legal y menores de edad debidamente autorizados.</p>
+          <p>Cada Persona Usuaria es responsable de los datos personales que brinda al momento de registrarse y se obliga a mantenerlos actualizados. Además, es el único responsable del uso y resguardo de su contraseña.</p>
+          <p>En algunos casos, podremos cobrar una tarifa por el uso de los servicios que integran el ecosistema de HardwarePC, que la Persona Usuaria se compromete a pagar.</p><br>
+          <h2>1- HardwarePC</h2><br>
+          <p>HardwarePC es una compañia de tecnología que ofrece servicios vinculados principalmente al comercio electrónico y a los pagos digitales.</p>
+          <p>Los servicios que ofrece HardwarePC en los sitios <a href="../index.html" target="_blank" rel="noopener">www.hardwarepc.com.ar</a> y <a href="../index.html" target="_blank" rel="noopener">www.hardwarepc.com.ar</a> y sus aplicaciones móviles (de ahora en más: "Sitio") están diseñados para formar un ecosistema que permita a las personas vender, comprar, pagar, enviar productos y realizar otras actividades comerciales con tecnología aplicada (de ahora en más: "Ecosistema MELI").</p><br>
+          <h2><strong>2- Términos y Condiciones</strong></h2><br>
+          <p>Estos términos y condiciones y los anexos que explican los servicios del Ecosistema MELI (de ahora en más: "Términos y Condiciones") regulan la relación entre HardwarePC y las personas que usan sus servicios ("Personas Usuarias").</p>
+          <p>Las Personas Usuarias aceptan estos Términos y Condiciones desde el momento en que se registran en el Sitio y usan el Ecosistema MELI.</p>
+          <p>Cuando debamos hacer cambios importantes en nuestros servicios, publicaremos las modificaciones con 10 días corridos de anticipación para que las Personas Usuarias puedan revisarlas y seguir usando el Ecosistema MELI. El plazo será de 2 días hábiles en caso de que tengamos que actualizar las tarifas de nuestros servicios. En ningún caso afectarán las operaciones que ya hayan finalizado.</p>
+          <p>Las Personas Usuarias que no tengan obligaciones pendientes con HardwarePC o con otras Personas Usuarias, podrán finalizar la relación con HardwarePC cancelando su cuenta.</p><br>
+          <h2>3- Capacidad</h2><br>
+          <p>Podrán usar nuestros servicios las personas mayores de edad que tengan capacidad legal para contratar. Los menores de edad, a partir de los 13 años, sólo podrán utilizar su cuenta con autorización del representante legal, quien responderá por todas las acciones y obligaciones que se deriven de la utilización de esa cuenta y quien deberá velar por el uso responsable y adecuado de ella en atención a la madurez del menor de edad que autorice.</p>
+          <p>Quien use el Ecosistema MELI en representación de una empresa deberá tener capacidad para contratar a nombre de ella. Además, para poder usar la cuenta, la Persona Usuaria debe encontrarse activa.</p><br>
+          <h2>4- Registro y Cuenta</h2><br>
+          <p>Quien quiera usar nuestros servicios, deberá completar el formulario de registro con los datos que le sean requeridos. Al completarlo, se compromete a hacerlo de manera exacta, precisa y verdadera y a mantener sus datos siempre actualizados. La Persona Usuaria será la única responsable de la certeza de sus datos de registro. Sin perjuicio de la información brindada en el formulario, podremos solicitar y/o consultar información adicional para corroborar la identidad de la Persona Usuaria.</p>
+          <p>La cuenta es personal, única e intransferible, es decir que bajo ningún concepto se podrá vender o ceder a otra persona. Se accede a ella con la clave personal de seguridad que haya elegido y que deberá mantener bajo estricta confidencialidad. La Persona Usuaria podrá crear <a href="https://www.mercadolibre.com.ar/ayuda/25781" target="_blank" rel="noopener">Cuentas Colaboradoras</a> y definir sus permisos de acceso. En cualquier caso, la Persona Usuaria será la única responsable por las operaciones que se realicen en su cuenta. En caso de detectar un uso no autorizado de su cuenta, deberá notificar de forma inmediata y fehaciente a HardwarePC.</p>
+          <p>Podremos rechazar una solicitud de registro o bien cancelar un registro ya aceptado, sin que esto genere derecho a un resarcimiento. No podrán registrarse nuevamente en el Sitio las Personas Usuarias que hayan sido inhabilitadas previamente. Tampoco podrán registrarse quienes están incluidos o relacionados a personas incluidas en listas nacionales o internacionales de sanciones. <a href="information.html" target="_self">Conocé más.</a></p>
+          <p>Además, en caso de detectar el uso de más de una cuenta, podremos aplicar retenciones, débitos y/o cualquier otra medida si consideramos que ese accionar puede perjudicar al resto de las personas que usan el Sitio o a HardwarePC, más allá de las sanciones que pudieran corresponder.</p><br>
+          <h2>5- Privacidad de datos</h2><br>
+          <p>En HardwarePC hacemos un uso responsable de la información personal, protegiendo la privacidad de las Personas Usuarias que nos confiaron sus datos y tomando las medidas necesarias para garantizar la seguridad en nuestro Ecosistema MELI. <a href="https://somosedison.com/crecer-en-meli/" target="_blank" rel="noopener">Conocé; más sobre nuestra Declaración de Privacidad.</a></p><br>
+          <h2>6- Acceso a Otra Información Comercial</h2><br>
+          <p>Además de lo previsto en las secciones anteriores, HardwarePC proporciona herramientas, aplicaciones y servicios basados en otra información comercial provista por las Personas Usuarias y/o generada al utilizar los servicios del Ecosistema MELI, para ayudar a los Vendedores a optimizar sus ventas, aumentar su volumen y gestionar su negocio. También podremos usarla para ofrecer a las Personas Usuarias promociones, productos y servicios de otras empresas o de marca compartida, también podrá; utilizarse en programas de prevención de fraude y otras medidas destinadas a aumentar la seguridad del Marketplace, de las Personas Usuarias y el cumplimiento de los Términos y Condiciones. Conoce más sobre nuestra política de <a href="information.html" target="_blank" rel="noopener">Acceso a Información</a>.</p><br>
+          <h2>7- Sanciones</h2><br>
+          <p>En caso que la Persona Usuaria incumpliera una ley o los Términos y Condiciones, podremos advertir, suspender, restringir o inhabilitar temporal o definitivamente su cuenta, sin perjuicio de otras sanciones que se establezcan en las reglas de uso particulares de los servicios de HardwarePC.</p><br>
+          <h2>8- Responsabilidad</h2><br>
+          <p>HardwarePC será responsable por cualquier defecto en la prestación de su servicio, en la medida en que le sea imputable y con el alcance previsto en las leyes vigentes.</p><br>
+          <h2>9- Tarifas</h2><br>
+          <p>HardwarePC podrá cobrar por sus servicios y la Persona Usuaria se compromete a pagarlos a tiempo.</p>
+          <p>Podremos modificar o eliminar las tarifas en cualquier momento con el debido preaviso establecido en la cláusula 2 de estos Términos y Condiciones. De la misma manera, podremos modificar las tarifas temporalmente por promociones en favor de las Personas Usuarias.</p>
+          <p>La Persona Usuaria autoriza a HardwarePC a retener y/o debitar los fondos existentes y/o futuros de su cuenta de Mercado Pago y/o de las cuentas bancarias que haya registrado en ella, para saldar las tarifas impagas o cualquier otra deuda que pudiera tener.</p>
+          <p>Para conocer el detalle de las tarifas de cada servicio, las Personas Usuarias deberán consultar los términos y condiciones correspondientes.</p>
+          <p>En todos los casos se emitirá la factura de conformidad con los datos fiscales que las personas tengan cargados en su cuenta.</p><br>
+          <h2>10- Propiedad Intelectual</h2><br>
+          <p>HardwarePC y/o sus sociedades relacionadas son propietarias de todos los derechos de propiedad intelectual sobre sus sitios, todo su contenido, servicios, productos, marcas, nombres comerciales, logos, diseños, imágenes, frases publicitarias, derechos de autor, dominios, programas de computación, códigos, desarrollos, software, bases de datos, información, tecnología, patentes y modelos de utilidad, diseños y modelos industriales, secretos comerciales, entre otros ("Propiedad Intelectual") y se encuentran protegidos por leyes nacionales e internacionales.</p>
+          <p>Aunque HardwarePC otorga permiso para usar sus productos y servicios conforme a lo previsto en los Términos y Condiciones, esto no implica una autorización para usar su Propiedad Intelectual, excepto consentimiento previo y expreso de HardwarePC y/o sus sociedades vinculadas. En cualquier caso, los usuarios vendedores que usen dichos productos y servicios no podrán utilizar la Propiedad Intelectual de HardwarePC de una manera que cause confusión en el público y deberán llevar a cabo su actividad comercial bajo una marca o nombre comercial propio y distintivo, que no resulte confundible con la marca HardwarePC y su familia de marcas "Mercado", siguiendo con los lineamientos del <a href="https://about.google/intl/es-419/locations/?region=north-america&office=mountain-view" target="_blank" rel="noopener">Legal Brandbook</a>.</p>
+          <p>Está prohibido usar nuestros productos o servicios para fines ilegales, realizar cualquier tipo de ingeniería inversa u obras derivadas, utilizar herramientas de búsqueda o de extracción de datos y contenidos de nuestra plataforma para su reutilización y/o crear bases de datos propias que incluyan en todo o en parte nuestro contenido sin nuestra expresa autorización. Está también prohibido el uso indebido, sin autorización y/o contrario a la normativa vigente y/o que genere confusión o implique uso denigratorio y/o que le cause perjuicio, daños o pérdidas a HardwarePC y/o a sus sociedades relacionadas. La utilización de los productos y servicios de HardwarePC tampoco implica la autorización para usar propiedad intelectual de terceros que pueda estar involucrada, cuyo uso quedará bajo exclusiva responsabilidad del usuario.<br>En caso que una Persona Usuaria o cualquier publicación infrinja la Propiedad Intelectual de HardwarePC o de terceros, HardwarePC podrá remover dicha publicación total o parcialmente, sancionar al usuario conforme a lo previsto en estos Términos y Condiciones y ejercer las acciones extrajudiciales y/o judiciales correspondientes.</p><br>
+          <h2>11- Indemnidad</h2><br>
+          <p>La Persona Usuaria mantendrá indemne a HardwarePC y sus sociedades relacionadas, así como a quienes la dirigen, suceden, administran, representan y/o trabajan en ellas, por cualquier reclamo administrativo o judicial iniciado por otras Personas Usuarias, terceros o por cualquier Organismo, relacionado con sus actividades en el Ecosistema MELI.<br>En virtud de esa responsabilidad, podrán realizar compensaciones, retenciones u otras medidas necesarias para la reparación de pérdidas, daños y perjuicios, cualquiera sea su naturaleza.</p><br>
+          <h2>12- Anexos</h2><br>
+          <p>Además de estos Términos y Condiciones, cada servicio del Ecosistema MELI tiene sus propias reglas de uso:</p>
+          <ul>
+            <li><a href="../index.html" target="_self">Marketplace</a></li>
+            <li><a href="../index.html" target="_self">Marketplace VIS</a></li>
+            <li><a href="../index.html" target="_self">Mercado Puntos</a></li>
+            <li><a href="../index.html" target="_self">Mercado Play</a></li>
+            <li><a href="../index.html" target="_self">Mercado Shops </a></li>
+            <li><a href="../index.html" target="_self">Mercado Pago </a></li>
+            <li><a href="../index.html" target="_self">Mercado Envíos</a></li>
+          </ul><br>
+          <h2>13- Jurisdicción y Ley Aplicable</h2><br>
+          <p>Estos Términos y Condiciones se rigen por la ley argentina. Toda controversia derivada de su aplicación, interpretación, ejecución o validez será resuelta por los tribunales nacionales ordinarios competentes, con asiento en la Ciudad de Buenos Aires, salvo disposición específica de normas de orden público, como por ejemplo, legislación relativa al Consumidor. Para todos los efectos relacionados con estos Términos y Condiciones y con el uso del sitio, MercadoLibre S.R.L. con CUIT 30-70308853-4 establece como domicilio Caseros 3039, Piso 2 Ciudad Autónoma de Buenos Aires, Argentina.</p><br>     
+        </div>
+        <div class="container-content m-auto p-0">
+          <h3 class="m-3 mb-0 text-center details">¿¿¿Pudiste leer y entender todos los puntos correspondientes???</h3>
+          <!-- Button trigger modal -->
+          <div class="container-fluid text-center">
+            <button type="button" class="btn mb-3 m-4" data-bs-toggle="modal" data-bs-target="#exampleModal0">
+              ¡¡¡Si, por supuesto!!!
+            </button>
+            <button type="button" class="btn mb-3 m-4" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+              No, creo que no.
+            </button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content banner-separator">
+                <div class="modal-header table">
+                  <h1 class="modal-title fs-1 m-auto" id="exampleModalLabel">¡¡¡Que bien!!!</h1>
+                </div>
+                <div class="modal-body text-center table fs-2">
+                  ¡¡¡Bien ahi crack!!!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn container-content" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content banner-separator">
+                <div class="modal-header table">
+                  <h1 class="modal-title fs-1 m-auto" id="exampleModalLabel">¡¡¡""(-_-)""!!!</h1>
+                </div>
+                <div class="modal-body text-center table fs-2">
+                  ............Volvelo a leer............
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn container-content" data-bs-dismiss="modal">Apreta el boton de <strong>"Ir arriba"</strong></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#redireccion">
+              <button id="btn" class="btn">Ir arriba</button>
+            </a>
+          </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="container-fluid container-footer">
-      <!---------------------------------------------------------->
-      <!-- Informacion -->
-      <div class="row">
-          <div class="col-sm-12 col-md-6 pt-3">
-          <div>
+      <div class="container-fluid ">
+        <!---------------------------------------------------------->
+        <!-- Informacion -->
+        <div class="container-footer row">
+          <div class="col-12 col-sm-6 col-md-6 pt-3">
+            <div>
               <h4 class="text-center pb-3 title-footer">Acerca de nosotros</h4>
+            </div>
+            <a href="information.html" class="nav-link text-center text-footer">
+                <h3>Terminos y condiciones</h3>
+            </a>
+            <a href="question.html" class="nav-link text-center text-footer">
+                <h3>Preguntas frecuentes</h3>
+            </a>
           </div>
-          <a href="information.html" class="nav-link text-center text-footer">
-              <h3>Terminos y condiciones</h3>
-          </a>
-          <a href="question.html" class="nav-link text-center text-footer">
-              <h3>Preguntas frecuentes</h3>
-          </a>
-          <p class="text-center gmail">hardwarepc@gmail.com</p>
-          </div>
-          <div class="col-sm-12 col-md-6 pt-3">
-          <div class="container-fluid row">
+          <div class="col-12 col-sm-6 col-md-6 pt-3">
+            <div class="container-fluid row">
               <h4 class="text-center pb-3 title-footer">Nuestras redes</h4>
-          </div>
-          <div class="container-fluid row"> 
+            </div>
+            <div class="container-fluid row"> 
               <div class="d-flex align-items-center justify-content-center pt-2 icons">
               <a href="https://www.twitter.com" class="mx-3" target="_blank">
                   <i class="bi bi-twitter-x"></i>
@@ -141,14 +236,15 @@
                   <i class="bi bi-youtube"></i>
               </a>
               </div>
+              <a href="https://mail.google.com" class="nav-link text-center gmail" target="_blank">hardwarepc@gmail.com</a>
+            </div>
           </div>
-          </div>
-      </div>
-      <!---------------------------------------------------------->
-      <!-- Copyright -->
-      <div class="d-flex justify-content-center pt-2 copyright">
-          <h6 class="mb-3"> Copyright © 2024 - HardwarePC - Todos los derechos reservados</h6>
-      </div>
+        </div>
+        <!---------------------------------------------------------->
+        <!-- Copyright -->
+        <div class="copyright">
+          <h6>Copyright © 2024 - HardwarePC - Todos los derechos reservados</h6>
+        </div>
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -1,8 +1,79 @@
+/*----------------------------------------------------------------------------*/
+/* Html */
 html {
 	font-size: 62.5%;
 }
 
+/*----------------------------------------------------------------------------*/
+/* Body */
 body {
 	font-family: "Roboto", sans-serif;
     background-color: $color-black;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Info-detalles */
+.details {
+    color: $color-grey;
+    margin: 0rem 1rem;
+    font-size: 1.99rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Conteiner-Content */
+.container-content {
+    background-color: $color-white;
+    width: 93%;
+	margin: 0 auto;
+	border-top: 1px solid $color-green;
+	border-bottom: 1px solid $color-green;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Button */
+.btn {
+	border: 0.3rem solid $color-button;
+	border-radius: 1.33rem;
+	background-color: transparent;
+	font-size: 1.33rem;
+	color: $color-green;
+
+	&:hover {
+		border: 0.3rem solid $color-button;
+		background-color: transparent;
+		box-shadow: 0 0 9px $color-button;
+		transform: scale(1.066);
+		transition: transform 0.3s ease-in-out;
+		z-index: 1;
+		color: $color-green;
+	}
+}
+
+/*----------------------------------------------------------------------------*/
+/* Scrollbar */
+::-webkit-scrollbar {
+	background-color: $color-black;
+	width: 0.99rem;
+}
+  
+::-webkit-scrollbar-track {
+	border-left: 1px solid $color-green;
+}
+  
+::-webkit-scrollbar-thumb {
+	background-color: $color-green;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Redireccion */
+#btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 4rem;
+    z-index: 999;
+    border: 2px solid $color-green;
+    background-color: $color-black;
+    color: $color-green;
+    padding: 10px 15px;
+    border-radius: 1.33rem;
 }

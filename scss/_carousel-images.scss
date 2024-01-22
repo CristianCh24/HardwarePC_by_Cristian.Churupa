@@ -1,13 +1,12 @@
 /*----------------------------------------------------------------------------*/
 /* Carousel de imagenes */
-
 .carousel-inner {
     height: 40rem;
     width: 100%;
     background: #010100;
     background-position: center;
     background-size: cover;
-    border-radius: 1rem;
+    border-radius: 1.33rem;
 }
 
 .slide img {
@@ -19,7 +18,7 @@
 .carousel-control-prev,
 .carousel-control-next {
     background-color: $color-black;
-    border-radius: 1rem;
+    border-radius: 1.33rem;
     width: 9%;
 
     &:hover {

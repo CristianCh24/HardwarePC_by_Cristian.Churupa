@@ -1,13 +1,14 @@
 .container-footer {
-    background: var(--black);
-    border-top: 3px solid var(--green);
+    background: $color-black;
+    border-top: 0.066rem solid $color-green;
+    margin-top: 1rem;
 }
 
 /*----------------------------------------------------------------------------*/
 /* Informacion */
 
 .title-footer {
-    color: var(--green);
+    color: $color-green;
     font-size: 1.75rem;
 }
 
@@ -15,18 +16,22 @@
     color: #575757;
 
     &:hover {
-        color: var(--green);
+        color: $color-green;
     }
 }
 
 .gmail {
     font-size: small;
     color: #fafafa;
+
+    &:hover {
+        color: $color-green;
+    }
 }
 
 .icons i {
     font-size: 1.50rem;
-    color: var(--green);
+    color: $color-green;
 }
 
 .border-bottom {
@@ -39,4 +44,6 @@
 .copyright h6 {
     font-size: 1.25rem;
     color: #575757;
+    text-align: center;
+    margin: 2rem;
 }

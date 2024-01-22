@@ -1,15 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*----------------------------------------------------------------------------*/
+/* Html */
 html {
   font-size: 62.5%;
 }
 
+/*----------------------------------------------------------------------------*/
+/* Body */
 body {
   font-family: "Roboto", sans-serif;
   background-color: #010100;
 }
 
 /*----------------------------------------------------------------------------*/
-/* Usuario */
+/* Info-detalles */
+.details {
+  color: #575757;
+  margin: 0rem 1rem;
+  font-size: 1.99rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Conteiner-Content */
+.container-content {
+  background-color: #141212;
+  width: 93%;
+  margin: 0 auto;
+  border-top: 1px solid #76b801;
+  border-bottom: 1px solid #76b801;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Button */
+.btn {
+  border: 0.3rem solid #76b801;
+  border-radius: 1.33rem;
+  background-color: transparent;
+  font-size: 1.33rem;
+  color: #76b801;
+}
+.btn:hover {
+  border: 0.3rem solid #76b801;
+  background-color: transparent;
+  box-shadow: 0 0 9px #76b801;
+  transform: scale(1.066);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1;
+  color: #76b801;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: #010100;
+  width: 0.99rem;
+}
+
+::-webkit-scrollbar-track {
+  border-left: 1px solid #76b801;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #76b801;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Redireccion */
+#btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  z-index: 999;
+  border: 2px solid #76b801;
+  background-color: #010100;
+  color: #76b801;
+  padding: 10px 15px;
+  border-radius: 1.33rem;
+}
+
 /*----------------------------------------------------------------------------*/
 /* Barra de navegacion */
 .container-navbar {
@@ -18,7 +86,7 @@ body {
 }
 
 .nav-item a {
-  font-size: 1.5rem;
+  font-size: 1.39rem;
   color: #575757;
   text-transform: capitalize;
 }
@@ -41,7 +109,10 @@ body {
   color: #76b801;
 }
 .navbar-brand:hover {
-  color: #575757;
+  color: #76b801;
+  transform: scale(1.066, 1.066);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
 .imgLogo {
@@ -53,85 +124,48 @@ body {
 /* Caja de busqueda */
 .search-box {
   background-color: #141212;
-  border-radius: 9px;
-  height: 33px;
+  border-radius: 1.33rem;
+  height: 3rem;
   margin: 0.25rem 0rem 0.25rem 0rem;
   overflow: hidden;
   border: 3px solid #010100;
   box-shadow: 0 0 9px #76b801;
 }
 .search-box input {
-  background: #141212;
+  background-color: #141212;
   color: #76b801;
   border: none;
+  font-size: 1.33rem;
+  padding: 0rem;
 }
-
-.search:hover, .search::placeholder {
+.search-box input:hover {
+  background-color: #141212;
+  color: #76b801;
+}
+.search-box .search {
   color: #76b801;
   background-color: #141212;
 }
-
+.search-box .search::placeholder {
+  color: #76b801;
+  filter: grayscale(66%);
+}
 .search-box button {
-  border: 0;
+  border: 0rem;
+  padding: 0rem;
   background-color: #010100;
+  width: 2.66rem;
 }
 .search-box button img {
-  width: 3rem;
-}
-
-main {
-  background-color: #010100;
-}
-
-.container-products {
-  background-color: #141212;
-  width: 96%;
-}
-
-/*----------------------------------------------------------------------------*/
-/* Info-Compra */
-.list-group-item {
-  background-color: transparent;
-  color: #575757;
-  border: #76b801 solid;
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
 }
 
 /*----------------------------------------------------------------------------*/
 /* Preguntas */
 .question {
   width: 80%;
-}
-
-.accordion-header,
-.accordion-body {
-  border: #76b801 3px solid;
-  border-radius: 3px;
-  margin-bottom: 0.6rem;
-  font-size: 1.5rem;
-  background-color: #010100;
-  color: #575757;
-}
-
-.accordion-item {
-  margin-bottom: 3rem;
-  border: none;
-  background-color: transparent;
-}
-
-.accordion-button {
-  color: #76b801;
-  font-size: 1.5rem;
-  background-color: #010100;
-}
-.accordion-button:not(.collapsed) {
-  color: #76b801;
-  background-color: #010100;
-  box-shadow: none;
-}
-
-.teres {
-  width: 80%;
-  color: #575757;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -164,20 +198,36 @@ input:focus {
 }
 
 /*----------------------------------------------------------------------------*/
-/* Info-detalles */
-.details {
+/* Accordion */
+.accordion-item {
+  margin: 3rem 1rem;
+}
+
+.accordion-header,
+.accordion-body {
+  border: #76b801 3px solid;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  background-color: #010100;
   color: #575757;
 }
 
-.table {
-  color: green;
-  margin: 0;
-  border-color: #76b801;
+.accordion-item {
+  margin-bottom: 3rem;
+  border: none;
+  background-color: transparent;
 }
 
-.table > :not(caption) > * > * {
-  background-color: transparent;
+.accordion-button {
   color: #76b801;
+  font-size: 1.5rem;
+  background-color: #010100;
+}
+.accordion-button:not(.collapsed) {
+  color: #76b801;
+  background-color: #010100;
+  box-shadow: none;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -185,8 +235,21 @@ input:focus {
 .banner-separator {
   background-color: #010100;
   color: #76b801;
-  margin-bottom: 0.66rem;
-  border-radius: 0.66rem;
+  margin: 1.33rem 0rem 1.33rem 0rem;
+  border-radius: 1.33rem;
+  display: flex;
+  justify-content: center;
+}
+.banner-separator h2 {
+  margin: 0rem;
+  padding: 0.33rem;
+  font-size: 2.66rem;
+  font-weight: unset;
+}
+.banner-separator h1 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -217,6 +280,19 @@ input:focus {
 }
 
 /*----------------------------------------------------------------------------*/
+/* Table */
+.table {
+  color: green;
+  margin: 0rem;
+  border-color: #76b801;
+}
+
+.table > :not(caption) > * > * {
+  background-color: transparent;
+  color: #76b801;
+}
+
+/*----------------------------------------------------------------------------*/
 /* Carousel de imagenes */
 .carousel-inner {
   height: 40rem;
@@ -224,7 +300,7 @@ input:focus {
   background: #010100;
   background-position: center;
   background-size: cover;
-  border-radius: 1rem;
+  border-radius: 1.33rem;
 }
 
 .slide img {
@@ -236,11 +312,31 @@ input:focus {
 .carousel-control-prev,
 .carousel-control-next {
   background-color: #010100;
-  border-radius: 1rem;
+  border-radius: 1.33rem;
   width: 9%;
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
+  background-color: transparent;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Info-Compra */
+.info-compra {
+  border: 1px solid #76b801;
+  border-radius: 1.33rem;
+  padding: 1.66rem;
+}
+.info-compra h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #575757;
+  border-bottom: #76b801 solid 1px;
+}
+.info-compra li {
+  font-size: 1.33rem;
+  color: #76b801;
+  border: #76b801 solid;
   background-color: transparent;
 }
 
@@ -250,12 +346,11 @@ input:focus {
   background-color: #010100;
   padding: 1.5rem;
   border-radius: 6px;
-  filter: grayscale(75%);
+  filter: grayscale(66%);
 }
 .card:hover {
   box-shadow: 0 0 9px #76b801;
-  transition-duration: 0.3s;
-  filter: grayscale(0);
+  filter: grayscale(0%);
   transform: scale(1.066);
   transition: transform 0.3s ease-in-out;
   z-index: 1;
@@ -277,14 +372,15 @@ input:focus {
 }
 
 .container-footer {
-  background: var(--black);
-  border-top: 3px solid var(--green);
+  background: #010100;
+  border-top: 0.066rem solid #76b801;
+  margin-top: 1rem;
 }
 
 /*----------------------------------------------------------------------------*/
 /* Informacion */
 .title-footer {
-  color: var(--green);
+  color: #76b801;
   font-size: 1.75rem;
 }
 
@@ -292,17 +388,20 @@ input:focus {
   color: #575757;
 }
 .text-footer:hover {
-  color: var(--green);
+  color: #76b801;
 }
 
 .gmail {
   font-size: small;
   color: #fafafa;
 }
+.gmail:hover {
+  color: #76b801;
+}
 
 .icons i {
   font-size: 1.5rem;
-  color: var(--green);
+  color: #76b801;
 }
 
 .border-bottom {
@@ -314,6 +413,8 @@ input:focus {
 .copyright h6 {
   font-size: 1.25rem;
   color: #575757;
+  text-align: center;
+  margin: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

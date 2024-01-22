@@ -1,0 +1,21 @@
+/*----------------------------------------------------------------------------*/
+/* Info-Compra */
+.info-compra {
+    border: 1px solid $color-green;
+    border-radius: 1.33rem;
+    padding: 1.66rem;
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        color: $color-grey;
+        border-bottom: $color-green solid 1px;
+    }
+
+    li {
+        font-size: 1.33rem;
+        color: $color-green;
+        border: $color-green solid;
+        background-color: transparent;
+    }
+}
