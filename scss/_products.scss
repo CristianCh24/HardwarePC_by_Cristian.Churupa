@@ -7,7 +7,7 @@
     filter: grayscale(66%);
 
     &:hover {
-        box-shadow: 0 0 9px $color-green;
+        box-shadow: 0 0 9px $color-green-bright;
         filter: grayscale(0%);
         transform: scale(1.066);
         transition: transform 0.3s ease-in-out;
@@ -22,7 +22,7 @@
 }
 
 .card-text {
-    color: $color-green;
+    color: $color-green-bright;
     font-size: 1.5rem;
 }
 

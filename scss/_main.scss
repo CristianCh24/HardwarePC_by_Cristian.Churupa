@@ -16,22 +16,22 @@
 
 .form-control {
     background-color: #141212;
-    color: var(--green);
-    border: var(--green) 2px solid;
+    color: $color-green;
+    border: $color-green 2px solid;
 }
 
 .form-label,
 .form-check {
-    color: var(--green);
+    color: $color-green;
 }
 
 input:focus {
-    background-color: #000000;
-    color: var(--green);
+    background-color: $color-black;
+    color: $color-green;
     transition: background-color 1s ease;
 }
 
 .form-check-input:checked {
-    background-color: var(--green);
-    border-color: var(--black);
+    background-color: $color-green;
+    border-color: $color-black;
 }

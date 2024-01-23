@@ -9,6 +9,10 @@ html {
 body {
 	font-family: "Roboto", sans-serif;
     background-color: $color-black;
+
+	a {
+		text-decoration: none;
+	}
 }
 
 /*----------------------------------------------------------------------------*/
@@ -25,6 +29,7 @@ body {
     background-color: $color-white;
     width: 93%;
 	margin: 0 auto;
+	padding: 3rem;
 	border-top: 1px solid $color-green;
 	border-bottom: 1px solid $color-green;
 }
@@ -41,7 +46,7 @@ body {
 	&:hover {
 		border: 0.3rem solid $color-button;
 		background-color: transparent;
-		box-shadow: 0 0 9px $color-button;
+		box-shadow: 0 0 9px $color-green-bright;
 		transform: scale(1.066);
 		transition: transform 0.3s ease-in-out;
 		z-index: 1;
