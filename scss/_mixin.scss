@@ -3,3 +3,14 @@
     color: green;
     font-size: 3rem;
 }
+
+@mixin flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fontcolor($size, $color) {
+    font-size: $size;
+    color: $color;
+}

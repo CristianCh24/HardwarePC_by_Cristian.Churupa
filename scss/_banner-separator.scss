@@ -1,12 +1,11 @@
 /*----------------------------------------------------------------------------*/
 /* Baner (separador) */
 .banner-separator {
+    @include flexcenter;
     background-color: $color-black;
     color: $color-green-bright;
     margin: 1.33rem 0rem 1.33rem 0rem ;
     border-radius: 1.33rem;
-    display: flex;
-    justify-content: center;
 
     h2 {
         margin: 0rem;

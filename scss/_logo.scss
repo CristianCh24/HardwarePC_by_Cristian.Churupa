@@ -1,10 +1,9 @@
 /*----------------------------------------------------------------------------*/
 /* Logo */
 .navbar-brand {
-    font-size: 1.5rem;
+    @include fontcolor(1.5rem, $color-green);
     font-weight: bold;
-    color: $color-green;
-
+    
     &:hover {
         color: $color-green;
         transform: scale(1.066, 1.066);

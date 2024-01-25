@@ -1,19 +1,16 @@
 /*----------------------------------------------------------------------------*/
 /* Accordion */
-
-
 .accordion-item {
     margin: 3rem 1rem;
 }
 
 .accordion-header,
 .accordion-body {
+    @include fontcolor(1.5rem, $color-grey);
     border: $color-green 3px solid;
     border-radius: 3px;
     margin-bottom: 0.6rem;
-    font-size: 1.5rem;
-    background-color: $color-black;
-    color: $color-grey;
+    background-color: $color-black;  
 }
 
 .accordion-item {
@@ -23,8 +20,7 @@
 }
 
 .accordion-button {
-    color: $color-green;
-    font-size: 1.5rem;
+    @include fontcolor(1.5rem, $color-green);
     background-color: $color-black;
 
     &:not(.collapsed) {

@@ -1,37 +1,46 @@
 /*----------------------------------------------------------------------------*/
 /* Preguntas */
-
 .question {
     width: 80%;
 }
 
-
 /*----------------------------------------------------------------------------*/
 /* Formulario */
-
-.campo {
-    background-color: var(--black);
-    border-radius: 6px;
-}
-
-.form-control {
-    background-color: #141212;
-    color: $color-green;
-    border: $color-green 2px solid;
-}
-
-.form-label,
-.form-check {
-    color: $color-green;
-}
-
-input:focus {
+.content-form {
+    @include fontcolor(1.33rem, $color-green);
     background-color: $color-black;
-    color: $color-green;
-    transition: background-color 1s ease;
+    width: 36vw;
+    height: 66vh;
+    display: flex;
+    margin: auto;
+    padding: 2.33rem;
+    border: 1px solid $color-green;
+    border-radius: 1.33rem;
+
+    .space {
+        background-color: $color-black;
+        color: $color-green;
+
+        label {        
+            color: $color-green;
+            margin: 0rem;
+            margin-top: 1rem;
+        }
+    
+        input {
+            @include fontcolor(1.33rem, $color-green);
+            background-color: #141212;
+            border: $color-green 1px solid;
+        }
+    }
 }
 
 .form-check-input:checked {
     background-color: $color-green;
     border-color: $color-black;
+}
+
+.form-label,
+.form-check {
+    color: $color-green;
 }

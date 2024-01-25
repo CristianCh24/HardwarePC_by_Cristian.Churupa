@@ -7,15 +7,13 @@
     background-color: $color-black;
 
     h2 {
-        font-size: 3rem;
+        @include fontcolor(3rem, $color-grey);
         text-align: center;
-        color: $color-grey;
         border-bottom: $color-green solid 1px;
     }
 
     li {
-        font-size: 1.33rem;
-        color: $color-green;
+        @include fontcolor(1.33rem, $color-green);
         border: $color-green solid;
         background-color: transparent;
     }

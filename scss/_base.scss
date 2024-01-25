@@ -18,9 +18,8 @@ body {
 /*----------------------------------------------------------------------------*/
 /* Info-detalles */
 .details {
-    color: $color-grey;
+	@include fontcolor(1.99rem, $color-grey);
     margin: 0rem 1rem;
-    font-size: 1.99rem;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -37,12 +36,11 @@ body {
 /*----------------------------------------------------------------------------*/
 /* Button */
 .btn {
+	@include fontcolor(1.33rem, $color-green);
 	border: 0.3rem solid $color-button;
 	border-radius: 1.33rem;
 	background-color: transparent;
-	font-size: 1.33rem;
-	color: $color-green;
-
+	
 	&:hover {
 		border: 0.3rem solid $color-button;
 		background-color: transparent;

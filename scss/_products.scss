@@ -2,9 +2,14 @@
 /* Productos */
 .card {
     background-color: $color-black;
-    padding: 1.5rem;
-    border-radius: 6px;
+    padding: 0.5rem;
+    border-radius: 1.33rem;
     filter: grayscale(66%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 
     &:hover {
         box-shadow: 0 0 9px $color-green-bright;
@@ -14,19 +19,32 @@
         z-index: 1;
     }
 
+   
+
     img {
-        height: 16rem;
+        height: 15rem;
         width: 100%;
         object-fit: scale-down;
     }
+
+    h6 {
+        @include fontcolor(1.3rem, $color-green-bright);
+        margin: 0rem;
+        margin-top: 0.66rem;
+        text-align: center;
+    }
+
+    p {
+        @include fontcolor(1.25rem, #fefefe);
+        margin: 0rem;
+        margin-top: 0.66rem;
+    }
+   
+    
+    
 }
 
-.card-text {
-    color: $color-green-bright;
-    font-size: 1.5rem;
-}
 
-.price {
-    font-size: 1.25rem;
-    color: #fefeff;
-}
+
+
+    

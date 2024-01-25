@@ -6,10 +6,8 @@
 
 /*----------------------------------------------------------------------------*/
 /* Informacion */
-
 .title-footer {
-    color: $color-green;
-    font-size: 1.75rem;
+    @include fontcolor(1.75rem, $color-green);
 }
 
 .text-footer {
@@ -21,8 +19,7 @@
 }
 
 .gmail {
-    font-size: small;
-    color: #fafafa;
+    @include fontcolor(small, #fafafa);
 
     &:hover {
         color: $color-green;
@@ -30,8 +27,7 @@
 }
 
 .icons i {
-    font-size: 1.50rem;
-    color: $color-green;
+    @include fontcolor(1.50rem, $color-green);
 }
 
 .border-bottom {
@@ -40,10 +36,8 @@
 
 /*----------------------------------------------------------------------------*/
 /* Copyright */
-
 .copyright h6 {
-    font-size: 1.25rem;
-    color: #575757;
+    @include fontcolor(1.25rem, #575757);
     text-align: center;
     margin: 2rem;
 }

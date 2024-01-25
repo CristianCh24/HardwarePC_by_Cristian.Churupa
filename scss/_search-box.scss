@@ -10,10 +10,9 @@
     box-shadow: 0 0 9px  $color-green-bright;
 
     input {
+        @include fontcolor(1.33rem, $color-green);
         background-color: $color-white;
-        color: $color-green;
         border: none;
-        font-size: 1.33rem;
         padding: 0rem;
     }
 
