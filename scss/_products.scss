@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: space-between;
 
-
     &:hover {
         box-shadow: 0 0 9px $color-green-bright;
         filter: grayscale(0%);
@@ -18,8 +17,6 @@
         transition: transform 0.3s ease-in-out;
         z-index: 1;
     }
-
-   
 
     img {
         height: 15rem;
@@ -39,9 +36,6 @@
         margin: 0rem;
         margin-top: 0.66rem;
     }
-   
-    
-    
 }
 
 

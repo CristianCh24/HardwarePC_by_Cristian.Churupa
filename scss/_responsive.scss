@@ -1,25 +1,25 @@
 /*----------------------------------------------------------------------------*/
 /* Responsive */
 @media (max-width: 368px) {
-    .row .col{
+    .mediahome .col{
         flex-basis: 100%;
     }
 }
 
 @media (min-width:599px) and (max-width:816px){
-    .row .col{
+    .mediahome .col{
         flex-basis: 33.33%;
     }
 }
 
 @media (min-width:816px) and (max-width:1000px){
-    .row .col{
+    .mediahome .col{
         flex-basis: 25%;
     }
 }
 
 @media (min-width:1830px) {
-    .row .col{
+    .mediahome .col{
         flex-basis: 12.5%;
     }
 }

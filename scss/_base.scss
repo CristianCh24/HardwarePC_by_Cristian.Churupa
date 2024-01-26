@@ -3,7 +3,6 @@
 html {
 	font-size: 62.5%;
 }
-
 /*----------------------------------------------------------------------------*/
 /* Body */
 body {
@@ -14,14 +13,12 @@ body {
 		text-decoration: none;
 	}
 }
-
 /*----------------------------------------------------------------------------*/
 /* Info-detalles */
 .details {
 	@include fontcolor(1.99rem, $color-grey);
     margin: 0rem 1rem;
 }
-
 /*----------------------------------------------------------------------------*/
 /* Conteiner-Content */
 .container-content {
@@ -32,7 +29,6 @@ body {
 	border-top: 1px solid $color-green;
 	border-bottom: 1px solid $color-green;
 }
-
 /*----------------------------------------------------------------------------*/
 /* Button */
 .btn {
@@ -51,7 +47,6 @@ body {
 		color: $color-green;
 	}
 }
-
 /*----------------------------------------------------------------------------*/
 /* Scrollbar */
 ::-webkit-scrollbar {
@@ -66,7 +61,6 @@ body {
 ::-webkit-scrollbar-thumb {
 	background-color: $color-green;
 }
-
 /*----------------------------------------------------------------------------*/
 /* Redireccion */
 #btn {

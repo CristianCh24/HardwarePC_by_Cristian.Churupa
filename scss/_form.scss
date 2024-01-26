@@ -1,19 +1,13 @@
 /*----------------------------------------------------------------------------*/
-/* Preguntas */
-.question {
-    width: 80%;
-}
-
-/*----------------------------------------------------------------------------*/
 /* Formulario */
 .content-form {
     @include fontcolor(1.33rem, $color-green);
     background-color: $color-black;
-    width: 36vw;
-    height: 66vh;
+    width: 96%;
+    height: auto;
     display: flex;
-    margin: auto;
-    padding: 2.33rem;
+    margin: 0;
+    padding: 1.33rem;
     border: 1px solid $color-green;
     border-radius: 1.33rem;
 
