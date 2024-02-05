@@ -17,6 +17,10 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #020202;
 }
+body .modal-backdrop.show {
+  opacity: 0.9;
+  background-color: #141212;
+}
 body a {
   text-decoration: none;
 }
@@ -136,9 +140,8 @@ body a {
   font-size: 1.33rem;
   color: rgba(117, 184, 1, 0.6235294118);
   background-color: #020202;
-  width: 96%;
+  width: auto;
   height: auto;
-  display: flex;
   margin: 0;
   padding: 1.33rem;
   border: 1px solid rgba(117, 184, 1, 0.6235294118);
@@ -158,6 +161,14 @@ body a {
   color: rgba(117, 184, 1, 0.6235294118);
   background-color: #141212;
   border: rgba(117, 184, 1, 0.6235294118) 1px solid;
+}
+.content-form .space input::placeholder {
+  color: #575757;
+}
+.content-form .form-select {
+  background-color: #141212;
+  color: rgba(117, 184, 1, 0.6235294118);
+  border: rgba(117, 184, 1, 0.6235294118) solid 1px;
 }
 
 .form-check-input:checked {
@@ -446,6 +457,11 @@ body a {
     width: 100%;
     height: 43rem;
     object-fit: fill;
+  }
+}
+@media (max-width: 566px) {
+  .register .col {
+    flex-basis: 100%;
   }
 }
 

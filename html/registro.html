@@ -51,100 +51,132 @@
       </nav>
     </header>
     <main>
-      <div class="container-content p-5">
+      <div class="container-content">
         <!---------------------------------------------------------->
         <!-- Baner (separador) -->
         <div class="banner-separator mb-4">
-          <h1>Bienvenido</h1>
+          <h1>¡¡¡Bienvenido!!!</h1>
         </div>
         <!---------------------------------------------------------->
         <!-- Formulario -->
-        <div class="container-fluid p-0 m-0 row">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0 m-0">
-            <div class="col-11 container-fluid">
-              <h2 class="banner-separator">Datos personales</h2>
-            </div>    
-            <form class="row needs-validation content-form m-auto">
-              <div class="col-md-6 space">
-                <label for="validationDefault01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationDefault01" required>
+        <div class="container-fluid p-0 m-0">
+
+          <div class="row row-cols row-cols-md-2 register">
+
+            <div class="col">
+
+
+              <div class="banner-separator mx-4">
+                <h2>Datos personales</h2>
+              </div>    
+              <form class="row needs-validation content-form">
+                <div class="col-md-6 space">
+                  <label for="validationDefault01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationDefault01" required>
+                </div>
+                <div class="col-md-6 space">
+                  <label for="validationDefault02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationDefault02" required>
+                </div>
+                <div class="col-12 space">
+                  <label for="validationDefault03" class="form-label">Correo Electronico</label>
+                  <input type="email" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-md-12 space">
+                  <label for="validationDefault04" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="validationDefault04" required>
+                </div>
+                <div class="col-12 space">
+                  <label for="numero" class="form-label">N° Documento</label>
+                  <input type="number" class="form-control" id="numero" required>
+                </div>
+                <div class="col-6 space">
+                  <label for="validationTooltip03" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="validationTooltip03" required>
+                </div>
+                <div class="col-6 space">
+                  <label for="numero" class="form-label">Codigo Postal</label>
+                  <input type="number" class="form-control" id="numero" required>
+                </div>
+  
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn px-5">Confirmar</button>
+                </div>   
+              </form>    
+  
+  
+            </div>
+  
+  
+  
+            <div class="col">
+  
+  
+              <div class="banner-separator mx-4">
+                <h2>Datos de la tarjeta</h2>
               </div>
-              <div class="col-md-6 space">
-                <label for="validationDefault02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationDefault02" required>
-              </div>
-              <div class="col-12 space">
-                <label for="validationDefault03" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-12 space">
-                <label for="validationDefault03" class="form-label">Password</label>
-                <input type="password" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-12 space">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-md-6 space">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>  
-              <div class="col-md-6 space">
-                <label for="inputZip" class="form-label">Codigo Postal</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12 text-center mt-4">
-                <button type="submit" class="btn px-5">Confirmar</button>
-              </div>   
-            </form>    
+              <form class="row needs-validation content-form m-auto">
+                <div class="col-12 mt-3">
+                  <label for="validationTooltip01" class="form-label mb-1">Medio de pago</label>
+                  <select class="form-select form-select-lg" id="validationTooltip01" required>
+                    <option selected disabled value="">-Seleccione-</option>
+                    <option value="1">MasterCard</option>
+                    <option value="2">Visa</option>
+                  </select>
+                </div>
+                <div class="col-12 space">
+                  <label for="validationDefault02" class="form-label">Titular de la tarjeta</label>
+                  <input type="name" class="form-control" id="validationDefault02" placeholder="Tal como está impreso en la tarjeta." required>
+                </div>
+                <div class="col-md-12 space">
+                  <label for="validationDefault03" class="form-label">Número de tarjeta</label>
+                  <input type="number" class="form-control" id="validationDefault03" required>
+                </div>
+                <div class="col-6 space">
+                  <label for="mesaño" class="form-label">Mes y Año</label>
+                  <input type="month" class="form-control" id="mesaño" required>
+                </div>  
+                <div class="col-6 space">
+                  <label for="numero" class="form-label">Cod.Seguridad</label>
+                  <input type="number" class="form-control" id="numero" required>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn px-5">Confirmar</button>
+                </div>   
+              </form>  
+              
+            </div>
+
           </div>
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0 m-0">
-            <div class="col-11 container-fluid">
-              <h2 class="banner-separator">Datos personales</h2>
-            </div>    
-            <form class="row needs-validation content-form m-auto">
-              <div class="col-md-6 space">
-                <label for="validationDefault01" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="validationDefault01" required>
-              </div>
-              <div class="col-md-6 space">
-                <label for="validationDefault02" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="validationDefault02" required>
-              </div>
-              <div class="col-12 space">
-                <label for="validationDefault03" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-12 space">
-                <label for="validationDefault03" class="form-label">Password</label>
-                <input type="password" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-12 space">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-              </div>
-              <div class="col-md-6 space">
-                <label for="inputCity" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>  
-              <div class="col-md-6 space">
-                <label for="inputZip" class="form-label">Codigo Postal</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
-              <div class="col-12 text-center mt-4">
-                <button type="submit" class="btn px-5">Confirmar</button>
-              </div>   
-            </form>    
-          </div>
-          <div class="form-check my-5">
-            <input class="form-check-input p-2" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label fs-5 no-underline" for="flexCheckDefault">Acepto que la informacion es veridica y de que leí los <a href="information.html"><strong>Terminos y condiciones</strong></a>. 
-            </label>
-          </div>
-          <div class="container-fluid text-center">
-            <button type="submit" class="btn px-5">Registrarse</button>
-          </div>  
+
         </div>
+        <div class="form-check my-5">
+          <input class="form-check-input p-2" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label fs-5 no-underline" for="flexCheckDefault">Acepto que la informacion es veridica y de que leí los <a href="information.html"><strong>Terminos y condiciones</strong></a>. 
+          </label>
+        </div>
+        <div class="container-fluid text-center">
+          <!-- Button trigger modal -->
+          <div class="container-fluid text-center">
+            <button type="button" class="btn px-5" data-bs-toggle="modal" data-bs-target="#exampleModal0">Registrarse</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content banner-separator">
+                <div class="modal-header table">
+                  <h1 class="modal-title fs-1 p-0 m-0 m-auto" id="exampleModalLabel">¡¡¡Gracias por registrarse!!!</h1>
+                </div>
+                <div class="modal-body text-center table fs-2">
+                  Esperemos que encuentres lo que busques con el mejor precio.
+                </div>
+                <div class="modal-footer border-0">
+                  <button type="button" class="btn px-5" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
       </div>
     </main>
     <footer>

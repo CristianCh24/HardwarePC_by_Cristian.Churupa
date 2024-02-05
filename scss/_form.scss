@@ -3,9 +3,9 @@
 .content-form {
     @include fontcolor(1.33rem, $color-green);
     background-color: $color-black;
-    width: 96%;
+    width: auto;
     height: auto;
-    display: flex;
+    
     margin: 0;
     padding: 1.33rem;
     border: 1px solid $color-green;
@@ -25,7 +25,17 @@
             @include fontcolor(1.33rem, $color-green);
             background-color: #141212;
             border: $color-green 1px solid;
+            
+            &::placeholder {
+                color: $color-grey;
+            }
         }
+    }
+
+    .form-select {
+        background-color: $color-white;
+        color: $color-green;
+        border: $color-green solid 1px;
     }
 }
 

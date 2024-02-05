@@ -8,6 +8,11 @@ html {
 body {
 	font-family: "Roboto", sans-serif;
     background-color: $color-black;
+	
+	.modal-backdrop.show{
+		opacity: .9;
+		background-color: $color-white;
+	}
 
 	a {
 		text-decoration: none;
