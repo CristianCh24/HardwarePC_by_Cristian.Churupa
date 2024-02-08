@@ -240,46 +240,6 @@ body a {
 }
 
 /*----------------------------------------------------------------------------*/
-/* Breadcrumb */
-.breadcrumb {
-  background-color: #020202;
-  text-decoration: none;
-  font-size: 1.25rem;
-  border-radius: 0.66rem;
-  --bs-breadcrumb-divider-color: grey;
-  --bs-breadcrumb-divider: ">";
-  margin-bottom: 0.66rem;
-}
-.breadcrumb a {
-  text-decoration: none;
-  color: rgba(117, 184, 1, 0.6235294118);
-}
-.breadcrumb .active {
-  color: #575757;
-}
-.breadcrumb .item1 + .item2::before {
-  color: grey;
-  margin: 0px 5px 0 5px;
-  --bs-breadcrumb-divider: "|";
-}
-.breadcrumb .breadshare {
-  justify-content: end;
-}
-
-/*----------------------------------------------------------------------------*/
-/* Table */
-.table {
-  color: green;
-  margin: 0rem;
-  border-color: rgba(117, 184, 1, 0.6235294118);
-}
-
-.table > :not(caption) > * > * {
-  background-color: transparent;
-  color: rgba(117, 184, 1, 0.6235294118);
-}
-
-/*----------------------------------------------------------------------------*/
 /* Carousel de imagenes */
 .carousel-inner {
   height: 19rem;
@@ -303,27 +263,6 @@ body a {
 }
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: transparent;
-}
-
-/*----------------------------------------------------------------------------*/
-/* Info-Compra */
-.info-compra {
-  border: 1px solid rgba(117, 184, 1, 0.6235294118);
-  border-radius: 1.33rem;
-  padding: 1.66rem;
-  background-color: #020202;
-}
-.info-compra h2 {
-  font-size: 3rem;
-  color: #575757;
-  text-align: center;
-  border-bottom: rgba(117, 184, 1, 0.6235294118) solid 1px;
-}
-.info-compra li {
-  font-size: 1.33rem;
-  color: rgba(117, 184, 1, 0.6235294118);
-  border: rgba(117, 184, 1, 0.6235294118) solid;
   background-color: transparent;
 }
 
